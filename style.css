@@ -174,7 +174,12 @@ body {
 }
 
 /* main */
-.ph {
+
+.main section {
+    padding: 30px 0;
+}
+
+.ph, .post {
     line-height: 1.6;
     padding: 15px 0;
     color: #8d8f92;
@@ -206,7 +211,12 @@ body {
     text-transform: uppercase;
     border-left: 10px solid #e1e6ea;
     padding-left: 10px;
-    margin: 60px 0;
+    margin: 50px 0;
+}
+.h3-title,.h4-name{
+    font-family: 'Quattrocento Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 /* welcome */
@@ -238,7 +248,8 @@ body {
 
 /* about */
 .about {
-    margin: 20px 0;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #dde1e4;
 }
 
 .about .row {
@@ -285,7 +296,7 @@ body {
 }
 
 .bh {
-    background-image: url("images/about/bh.png");  
+    background-image: url("images/about/bh.png");
 }
 
 .soc-box:hover {
@@ -321,10 +332,47 @@ body {
     padding: 0 15px;
 }
 
-.list-title {
+.list-body h3 {
     font-size: 18px;
-    text-transform: uppercase;
 }
+
+/* team */
+.mate-box{
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+.teammate{
+    background-color: #e1e6ea;
+    max-width: 263px;
+}
+
+.mate-photo img{
+    max-width: 100%;
+}
+.mate-info{
+    padding: 20px;
+}
+
+.mate-info h4{
+    font-size: 16px;
+}
+
+.mate-info p{
+    font-size: 14px;
+    padding: 0;
+}
+
+/* work */
+.work {
+    background-color: #3a454d;
+}
+
+.work-sp-btn {
+    margin: auto;
+    text-align: center;
+}
+
 
 /* only mobile - xs */
 
@@ -508,7 +556,7 @@ body {
     }
 
     .col-md-3 {
-        float: 0 0 25%;
+        flex: 0 0 25%;
         max-width: 25%;
     }
 
