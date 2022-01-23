@@ -342,7 +342,7 @@ body {
 /* team */
 .mate-box {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 15px 0;
 }
 
@@ -361,11 +361,9 @@ body {
     color: #fff;
 }
 
-.mate-photo{
-    width: 263px;
-    height: 300px;
-}
 .mate-photo img {
+    width: 263px;
+    max-height: 300px;
     max-width: 100%;
 }
 
