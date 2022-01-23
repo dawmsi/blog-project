@@ -361,6 +361,10 @@ body {
     color: #fff;
 }
 
+.mate-photo{
+    width: 263px;
+    height: 300px;
+}
 .mate-photo img {
     max-width: 100%;
 }
