@@ -179,7 +179,8 @@ body {
     padding: 30px 0;
 }
 
-.ph, .post {
+.ph,
+.post {
     line-height: 1.6;
     padding: 15px 0;
     color: #8d8f92;
@@ -213,10 +214,19 @@ body {
     padding-left: 10px;
     margin: 50px 0;
 }
-.h3-title,.h4-name{
+
+.h3-title,
+.h4-name {
     font-family: 'Quattrocento Sans', sans-serif;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+.s-i {
+    width: 48px;
+    height: 48px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* welcome */
@@ -270,38 +280,31 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.s-i {
-    width: 48px;
-    height: 48px;
-    background-position: center;
-    background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 .fb {
-    background-image: url("images/about/fb.png");
+    background-image: url("images/icons/fb.png");
 }
 
 .tw {
-    background-image: url("images/about/tw.png");
+    background-image: url("images/icons/tw.png");
 }
 
 .goo {
-    background-image: url("images/about/goo.png");
+    background-image: url("images/icons/goo.png");
 }
 
 .dbb {
-    background-image: url("images/about/dbb.png");
+    background-image: url("images/icons/dbb.png");
 }
 
 .bh {
-    background-image: url("images/about/bh.png");
+    background-image: url("images/icons/bh.png");
 }
 
 .soc-box:hover {
     background-color: #d0d5d9;
-    cursor: pointer;
 }
 
 .about-list {
@@ -337,28 +340,75 @@ body {
 }
 
 /* team */
-.mate-box{
+.mate-box {
     display: flex;
     justify-content: center;
     padding: 15px 0;
 }
-.teammate{
+
+.teammate {
+    position: relative;
     background-color: #e1e6ea;
     max-width: 263px;
 }
 
-.mate-photo img{
+.teammate:hover>.mate-info {
+    background-color: #3a454d;
+    color: #fff;
+}
+
+.teammate:hover>.mate-info p {
+    color: #fff;
+}
+
+.mate-photo img {
     max-width: 100%;
 }
-.mate-info{
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s;
+    visibility: hidden;
+}
+
+.teammate:hover>.mate-photo .overlay {
+    background-color: rgba(255, 255, 255, 0.75);
+    visibility: visible;
+}
+
+.icon-overlay {
+    height: 50px;
+    width: 50px;
+    background-color: #3a454d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1px;
+}
+.icon-overlay:hover{
+    background-color: #4e5a62;
+}
+
+.in {
+    background-image: url("images/icons/in.png");
+}
+
+.mate-info {
     padding: 20px;
 }
 
-.mate-info h4{
+.mate-info h4 {
     font-size: 16px;
 }
 
-.mate-info p{
+.mate-info p {
     font-size: 14px;
     padding: 0;
 }
