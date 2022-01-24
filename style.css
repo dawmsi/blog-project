@@ -419,10 +419,18 @@ body {
 .work {
     background-color: #3a454d;
 }
-
+.grid-work{
+    padding: 15px;
+}
+.work-image img{
+    width: 100%;
+}
 .work-sp-btn {
     margin: auto;
     text-align: center;
+}
+.work .btn{
+    margin: 25px 0 15px 0;
 }
 
 
@@ -609,6 +617,10 @@ body {
     .col-md-3 {
         flex: 0 0 25%;
         max-width: 25%;
+    }
+    .col-md-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
     }
 
     .col-md-7 {
