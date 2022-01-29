@@ -229,6 +229,17 @@ body {
     background-repeat: no-repeat;
 }
 
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 0;
+}
+
+.container-content {
+    position: relative;
+    max-width: 263px;
+}
+
 /* welcome */
 .slider {
     background-image: url(images/slider/bg.png);
@@ -340,24 +351,16 @@ body {
 }
 
 /* team */
-.mate-box {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 15px 0;
-}
-
-.teammate {
-    position: relative;
+.team .container-content {
     background-color: #e1e6ea;
-    max-width: 263px;
 }
 
-.teammate:hover>.mate-info {
+.team .container-content:hover>.mate-info {
     background-color: #3a454d;
     color: #fff;
 }
 
-.teammate:hover>.mate-info p {
+.team .container-content:hover>.mate-info p {
     color: #fff;
 }
 
@@ -380,7 +383,7 @@ body {
     visibility: hidden;
 }
 
-.teammate:hover>.mate-photo .overlay {
+.container-content:hover>.mate-photo .overlay {
     background-color: rgba(255, 255, 255, 0.75);
     visibility: visible;
 }
@@ -394,7 +397,8 @@ body {
     align-items: center;
     margin: 0 1px;
 }
-.icon-overlay:hover{
+
+.icon-overlay:hover {
     background-color: #4e5a62;
 }
 
@@ -419,24 +423,30 @@ body {
 .work {
     background-color: #3a454d;
 }
-.grid-work{
+
+.grid-work {
     margin: 15px;
     position: relative;
 }
-.work-image:hover>.hov-cont{
+
+.work-image:hover>.hov-cont {
     visibility: visible;
 }
-.work-image img{
+
+.work-image img {
     width: 100%;
 }
+
 .work-sp-btn {
     margin: auto;
     text-align: center;
 }
-.work .btn{
+
+.work .btn {
     margin: 25px 0 15px 0;
 }
-.hov-cont{
+
+.hov-cont {
     position: absolute;
     visibility: hidden;
     background-color: rgba(41, 47, 54, 0.75);
@@ -448,7 +458,8 @@ body {
     flex: 0 0 auto;
     flex-direction: column;
 }
-.plus{
+
+.plus {
     flex: 0 0 calc(100% - 60px);
     width: 100%;
     height: 48px;
@@ -457,7 +468,8 @@ body {
     background-position: center;
     cursor: pointer;
 }
-.image-title{
+
+.image-title {
     height: 60px;
     background-color: #292f36;
     text-transform: uppercase;
@@ -466,40 +478,48 @@ body {
     color: #fff;
     font-size: 18px;
     font-weight: bold;
-    
+
 }
+
 /* servixes */
-.services .mate-box{
-    text-align: center  ;
+.services .flex-container {
+    text-align: center;
 }
-.services .h4-name{
+
+.services .h4-name {
     font-size: 17px;
 }
-.icon-box{
+
+.icon-box {
     width: 100%;
     height: 48px;
     margin: 20px 0;
 }
-.serv-icon1{
+
+.serv-icon1 {
     background-image: url("images/services/i-sett.png");
     background-position: center;
     background-repeat: no-repeat;
 }
-.serv-icon2{
+
+.serv-icon2 {
     background-image: url("images/services/i-edit.png");
     background-position: center;
     background-repeat: no-repeat;
 }
-.serv-icon3{
+
+.serv-icon3 {
     background-image: url("images/services/i-mob.png");
     background-position: center;
     background-repeat: no-repeat;
 }
-.serv-icon4{
+
+.serv-icon4 {
     background-image: url("images/services/i-clock.png");
     background-position: center;
     background-repeat: no-repeat;
 }
+
 /* only mobile - xs */
 
 @media (max-width: 553px) {
@@ -684,6 +704,7 @@ body {
         flex: 0 0 25%;
         max-width: 25%;
     }
+
     .col-md-4 {
         flex: 0 0 33.33333%;
         max-width: 33.33333%;
