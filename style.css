@@ -211,20 +211,46 @@ body {
     background-image: url("images/icons/sk.png");
 }
 
-/* main */
-
-.main section {
-    padding: 30px 0;
-}
-
+/* dark-mode */
 .dark-mode {
     background-color: #3a454d;
+}
+
+.dark-mode .h2-title {
+    border-color: #4e5a62;
 }
 
 .dark-mode .h2-title,
 .dark-mode .h4-name {
     color: #fff;
 }
+
+/* buttons */
+.btn {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 4px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.btn:hover,
+.forma .btn {
+    border-color: #39a493;
+    background-color: #39a493;
+}
+
+
+/* main */
+
+.main section {
+    padding: 30px 0;
+}
+
 
 .ph,
 .post {
@@ -234,24 +260,6 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.btn {
-
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #fff;
-    border-radius: 4px;
-    border: 2px solid #fff;
-    background-color: transparent;
-    padding: 15px 20px;
-    margin: 10px 10px 0 0;
-}
-
-.btn:hover,
-form .form-btn {
-    border-color: #39a493;
-    background-color: #39a493;
-}
 
 .h2-title {
     font-size: 36px;
@@ -323,6 +331,10 @@ form .form-btn {
     max-width: 60%;
     color: #ccd0d7;
     padding: 32px 0;
+}
+
+.slider .btn {
+    margin: 5px 5px 5px 0;
 }
 
 /* about */
@@ -598,9 +610,6 @@ form .form-btn {
     height: 40px;
 }
 
-.form-btn {
-    margin: 0;
-}
 
 /* footer */
 
