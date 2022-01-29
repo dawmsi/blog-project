@@ -115,6 +115,9 @@ body {
     padding: 6px 10px;
     border: 2px solid transparent;
     border-radius: 3px;
+}
+
+.menu li a {
     cursor: pointer;
 }
 
