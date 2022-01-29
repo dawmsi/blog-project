@@ -420,7 +420,11 @@ body {
     background-color: #3a454d;
 }
 .grid-work{
-    padding: 15px;
+    margin: 15px;
+    position: relative;
+}
+.work-image:hover>.hov-cont{
+    visibility: visible;
 }
 .work-image img{
     width: 100%;
@@ -431,6 +435,38 @@ body {
 }
 .work .btn{
     margin: 25px 0 15px 0;
+}
+.hov-cont{
+    position: absolute;
+    visibility: hidden;
+    background-color: rgba(41, 47, 54, 0.75);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+}
+.plus{
+    flex: 0 0 calc(100% - 60px);
+    width: 100%;
+    height: 48px;
+    background-image: url("images/work/plus.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.image-title{
+    height: 60px;
+    background-color: #292f36;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    
 }
 
 
