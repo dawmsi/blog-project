@@ -468,8 +468,38 @@ body {
     font-weight: bold;
     
 }
-
-
+/* servixes */
+.services .mate-box{
+    text-align: center  ;
+}
+.services .h4-name{
+    font-size: 17px;
+}
+.icon-box{
+    width: 100%;
+    height: 48px;
+    margin: 20px 0;
+}
+.serv-icon1{
+    background-image: url("images/services/i-sett.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.serv-icon2{
+    background-image: url("images/services/i-edit.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.serv-icon3{
+    background-image: url("images/services/i-mob.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.serv-icon4{
+    background-image: url("images/services/i-clock.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
 /* only mobile - xs */
 
 @media (max-width: 553px) {
