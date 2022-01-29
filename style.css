@@ -238,6 +238,16 @@ body {
     background-repeat: no-repeat;
 }
 
+
+.container-card {
+    margin: 15px 0;
+    position: relative;
+}
+
+.card-image img {
+    width: 100%;
+}
+
 .flex-container {
     display: flex;
     justify-content: space-evenly;
@@ -430,17 +440,8 @@ body {
 
 /* work */
 
-.grid-work {
-    margin: 15px;
-    position: relative;
-}
-
-.work-image:hover>.hov-cont {
+.work .card-image:hover>.hov-cont {
     visibility: visible;
-}
-
-.work-image img {
-    width: 100%;
 }
 
 .work-sp-btn {
