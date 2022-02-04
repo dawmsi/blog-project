@@ -567,11 +567,8 @@ body {
 
 /* map */
 .map {
+    position: relative;
     margin: 10px 0;
-}
-
-.map img {
-    width: 100%;
 }
 
 /* contact */
@@ -585,6 +582,8 @@ body {
 }
 
 .contact .forma {
+    position: relative;
+    z-index: 10;
     margin-top: -130px;
     padding: 15px;
     background-color: #fff;
