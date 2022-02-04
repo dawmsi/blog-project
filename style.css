@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&display=swap");
 
 /* mobile - xs */
 * {
@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 .container {
@@ -96,6 +96,10 @@ body {
     align-items: center;
 }
 
+.logo {
+    padding: 15px 0;
+}
+
 .menu {
     background: #1d2126;
     font-size: 14px;
@@ -106,34 +110,28 @@ body {
     padding: 15px;
 }
 
-.logo {
-    padding: 15px 0;
-}
 
 .menu a {
+    display: block;
     text-decoration: none;
     color: #a4aead;
     cursor: pointer;
-    width: 100%;
+
+}
+
+.menu.navigation li:focus-within {
+    border-color: #23b7a3;
+}
+
+.menu>li a:focus-within {
+    color: #23b7a3;
 }
 
 .menu li {
     padding: 6px 10px;
     border: 2px solid transparent;
     border-radius: 3px;
-    display: block;
-}
 
-.menu .sel-menu {
-    border: 2px solid #23b7a3;
-}
-
-.menu .sel-menu:hover {
-    border-color: #23b7a3;
-}
-
-.sel-menu a {
-    color: #23b7a3;
 }
 
 .menu li:hover,
@@ -174,7 +172,7 @@ body {
     width: 30px;
     height: 30px;
     position: absolute;
-    background-image: url('images/header/search.png');
+    background-image: url("images/header/search.png");
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -250,26 +248,23 @@ body {
     background-color: #39a493;
 }
 
-
 /* main */
 
 .main section {
     padding: 30px 0;
 }
 
-
 .ph,
 .post {
     line-height: 1.6;
     padding: 15px 0;
     color: #8d8f92;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
-
 
 .h2-title {
     font-size: 36px;
-    font-family: 'Quattrocento Sans', sans-serif;
+    font-family: "Quattrocento Sans", sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     border-left: 10px solid #e1e6ea;
@@ -279,7 +274,7 @@ body {
 
 .h3-title,
 .h4-name {
-    font-family: 'Quattrocento Sans', sans-serif;
+    font-family: "Quattrocento Sans", sans-serif;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -290,7 +285,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
-
 
 .container-card {
     margin: 15px 0;
@@ -309,7 +303,6 @@ body {
 
 .container-content {
     position: relative;
-
 }
 
 /* welcome */
@@ -328,7 +321,7 @@ body {
 
 .welcome-title {
     font-size: 36px;
-    font-family: 'Quattrocento Sans', sans-serif;
+    font-family: "Quattrocento Sans", sans-serif;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -367,7 +360,6 @@ body {
 .about .soc-box:hover {
     background-color: #d0d5d9;
 }
-
 
 .about-list {
     display: flex;
@@ -517,7 +509,6 @@ body {
     color: #fff;
     font-size: 18px;
     font-weight: bold;
-
 }
 
 /* services */
@@ -616,7 +607,6 @@ body {
     outline: none;
 }
 
-
 /* footer */
 
 .footer-el {
@@ -639,8 +629,6 @@ body {
     height: 100%;
 }
 
-
-
 /* only mobile - xs */
 
 @media (max-width: 553px) {
@@ -648,14 +636,14 @@ body {
         display: none;
     }
 
-    .sandwich {
-        padding: 18px 15px;
-    }
-
     .row {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .sandwich {
+        padding: 18px 15px;
     }
 
     .nav-mobile-menu {
@@ -687,23 +675,22 @@ body {
     .header {
         position: sticky;
         width: 100%;
-        z-index: 10;
+        z-index: 20;
         top: -1px;
         left: -1px;
         right: -1px;
         bottom: 0;
         height: 52px;
-
     }
 
     .navigation {
         position: fixed;
-        z-index: 5;
+        z-index: -10;
         top: 0;
         left: 0;
         right: 0;
         transform: translateY(-100%);
-        transition: .500s ease-in-out;
+        transition: 0.5s ease-in-out;
         opacity: 0;
         visibility: hidden;
         justify-content: center;
@@ -716,7 +703,6 @@ body {
         visibility: visible;
         top: 40px;
         transform: translateX(0);
-
     }
 
     .nav-mobile-menu.active-menu span:nth-child(1) {
@@ -735,7 +721,7 @@ body {
 }
 
 /* tablet - sm */
-@media(min-width: 553px) {
+@media (min-width: 553px) {
     .container {
         max-width: 525px;
     }
@@ -807,7 +793,7 @@ body {
 }
 
 /* laptop - md */
-@media(min-width: 992px) {
+@media (min-width: 992px) {
     .container {
         max-width: 960px;
     }
@@ -865,7 +851,7 @@ body {
 }
 
 /* desktop - lg */
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
     .container {
         max-width: 1170px;
     }
