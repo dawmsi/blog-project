@@ -632,10 +632,14 @@ body {
 /* only mobile - xs */
 
 @media (max-width: 553px) {
-    
-    .main{
-    position:relative;
-    z-index: -20;
+    .main {
+        position: relative;
+        z-index: -20;
+    }
+    .header .container .row {
+        width: 100%;
+        position: fixed;
+        background-color: #1d2126;
     }
     
     .hidden-xs {
