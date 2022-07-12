@@ -632,6 +632,12 @@ body {
 /* only mobile - xs */
 
 @media (max-width: 553px) {
+    
+    .main{
+    position:relative;
+    z-index: -20;
+    }
+    
     .hidden-xs {
         display: none;
     }
