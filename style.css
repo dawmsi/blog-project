@@ -635,6 +635,7 @@ body {
     }
     .header .container .row {
         width: 100%;
+        top: 0;
         position: fixed;
         background-color: #1d2126;
     }
