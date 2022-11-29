@@ -111,19 +111,12 @@ body {
     padding: 15px;
 }
 
+.menu a,
 .menu.active-menu a {
     display: block;
     text-decoration: none;
     color: #a4aead;
     cursor: pointer;
-}
-
-.menu.active-menu li:focus-within {
-    border-color: #23b7a3;
-}
-
-.menu.active-menu > li a:focus-within {
-    color: #23b7a3;
 }
 
 .menu li {
