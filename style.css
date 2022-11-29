@@ -98,6 +98,7 @@ body {
 
 .logo {
     padding: 15px 0;
+    z-index: 20;
 }
 
 .menu {
@@ -110,18 +111,18 @@ body {
     padding: 15px;
 }
 
-.menu a {
+.menu.active-menu a {
     display: block;
     text-decoration: none;
     color: #a4aead;
     cursor: pointer;
 }
 
-.menu.navigation li:focus-within {
+.menu.active-menu li:focus-within {
     border-color: #23b7a3;
 }
 
-.menu > li a:focus-within {
+.menu.active-menu > li a:focus-within {
     color: #23b7a3;
 }
 
@@ -131,7 +132,7 @@ body {
     border-radius: 3px;
 }
 
-.menu li:hover,
+.menu.active-menu li:hover,
 .search input:hover {
     border: 2px solid #5a6068;
 }
@@ -633,20 +634,29 @@ body {
         position: relative;
         z-index: -20;
     }
-    .header .container .row {
-        width: 100%;
-        top: -1px;
-        position: fixed;
+
+    .header .row {
         background-color: #1d2126;
-    }
-    .hidden-xs {
-        display: none;
+        z-index: 10;
     }
 
     .row {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        width: 100%;
+    }
+    .header .container .row {
+        width: 100%;
+        top: -1px;
+        left: 15px;
+        right: 15px;
+        position: fixed;
+        background-color: #1d2126;
+    }
+
+    .hidden-xs {
+        display: none;
     }
 
     .sandwich {
@@ -691,12 +701,12 @@ body {
 
     .navigation {
         position: fixed;
-        z-index: -10;
+        z-index: -30;
         top: 0;
         left: 0;
         right: 0;
         transform: translateY(-100%);
-        transition: 0.5s ease-in-out;
+        transition: 0.4s ease-in-out;
         opacity: 0;
         visibility: hidden;
         justify-content: center;
@@ -704,7 +714,24 @@ body {
         flex-direction: column;
     }
 
+    .navigation li a,
+    .navigation li,
+    .navigation ul {
+        height: 0;
+        font-size: 0;
+        height: 14px;
+        transition: all 0s;
+    }
+    .active-menu li a,
+    .navigation li,
+    .navigation ul {
+        height: fit-content;
+        font-size: 14px;
+        transition: all 0s;
+    }
+
     .navigation.active-menu {
+        z-index: -20;
         opacity: 1;
         visibility: visible;
         top: 40px;
