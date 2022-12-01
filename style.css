@@ -740,6 +740,17 @@ body {
     .nav-mobile-menu.active-menu span:nth-child(3) {
         transform: scale(0);
     }
+
+    .slider {
+    animation: slide-anim 10s infinite;
+    background-position: center;
+    }
+
+    @keyframes slide-anim {
+        50%{
+            background-position: right;
+        }
+    }
 }
 
 /* tablet - sm */
