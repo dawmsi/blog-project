@@ -334,7 +334,6 @@ body {
 }
 
 .about .row {
-
 }
 
 .about .soc-icons {
@@ -742,14 +741,20 @@ body {
     }
 
     .slider {
-    animation: slide-anim 10s infinite;
-    background-position: center;
+        animation: slide-anim 10s infinite;
+        background-position: center;
     }
 
     @keyframes slide-anim {
-        50%{
+        50% {
             background-position: right;
         }
+    }
+    .footer .soc-icons,
+    .footer .copyright,
+    .footer-el {
+        justify-content: space-evenly;
+        height: 60px;
     }
 }
 
