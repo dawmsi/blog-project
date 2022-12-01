@@ -334,7 +334,7 @@ body {
 }
 
 .about .row {
-    align-items: flex-start;
+
 }
 
 .about .soc-icons {
@@ -630,15 +630,11 @@ body {
 
     .header .row {
         background-color: #1d2126;
+        padding-top: 5px;
+        margin-top: -5px;
         z-index: 10;
     }
 
-    .row {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
     .header .container .row {
         width: 100%;
         top: -1px;
